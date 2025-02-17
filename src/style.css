@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    background-color: #6a0dad; 
+    margin: 0;
+    padding: 0;
+}
+
+.app-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; 
+}
+
+
+.form-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 550px; 
+    text-align: center;
+    border: 3px solid;
+}
+
+.form-label {
+    color: rgb(248, 248, 248) !important;
+    font-weight: 500;
+    font-size: large;
+}
+
+
+.neon-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #B1F0F7; 
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    animation: neonGlow 1.5s infinite alternate;
+    text-align: center;
+}
+
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    }
+    50% {
+        text-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff, 0 0 60px #00d4ff, 0 0 120px #00d4ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    }
+}
+
+
+.neon-input {
+    border: 2px solid #00d4ff; 
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.neon-input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+    outline: none;
+}
+
+
+.neon-button {
+    background-color: #00d4ff; 
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.neon-button:hover {
+    background-color: #00b8e6; 
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+
+.button-container .btn-warning {
+    background-color: #ff33cc; 
+    border: none;
+}
+
+.button-container .btn-danger {
+    background-color: #ff3366; 
+    border: none;
+}
+
+.button-container .btn-warning:hover {
+    background-color: #ff66b3;
+    box-shadow: 0 0 10px #ff33cc, 0 0 20px #ff33cc;
+}
+
+.button-container .btn-danger:hover {
+    background-color: #ff4d94;
+    box-shadow: 0 0 10px #ff3366, 0 0 20px #ff3366;
+}
+
+
+.user-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.user-table th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+
+.neon-input {
+    border: 2px solid #00d4ff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.neon-input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+    outline: none;
+}
+
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+.user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+}
+
+
+.user-table th,
+.user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-table th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+}
+
+
+.user-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.button-container .btn {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.button-container .btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.button-container .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.button-container .btn-warning:hover {
+    background-color: #e0a800;
+    box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
+}
+
+.button-container .btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 10px #dc3545, 0 0 20px #dc3545;
+}
+
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .app-background {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .neon-title {
+        font-size: 1.8rem;
+    }
+
+    .form-card {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .user-table th, .user-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .button-container .btn {
+        width: 100%; 
+    }
+}
